@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/master.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Nothing+You+Could+Do|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
 
   <title>Andy Brown</title>
 
+  <script src="js/jquery.js"></script>
   <script src="js/main.js"></script>
 
 </head>
 
 <body>
+<div id="topBorder"></div>
+<div id="container">
 
   <div id="header">
     <!-- <img id="logo" src="images/ab.png" alt=""> -->
@@ -23,11 +26,11 @@
     <div id="menu">
       <table>
         <tr>
-          <td><a href="#about">about</a></td>
-          <td><a href="#projects">projects</a></td>
+          <td ><a href="#about" class="nav">about</a></td>
+          <td><a href="#projects" class="nav">projects</a></td>
           <!-- Link resume in pdf format -->
-          <td>resume</td>
-          <td><a href="#contact">contact</a></td>
+          <td><a href="#" class="nav">resume</a></td>
+          <td><a href="#contact" class="nav">contact</a></td>
         </tr>
       </table>
     </div>
@@ -41,14 +44,15 @@
 
     <div id="homeContent">
       <div id="headContent">
-        <p>Hi there, I'm Andy. I'm a passionate front end developer, with a keen interest in all faucets of the web. I'm inherently curious by nature, and love finding better ways to do things.</p>
+        <p id="headComment">Hi there! I'm Andy, a passionate front end developer with a keen interest in all faucets of the web. I love solving problems with code and finding better ways to do things.</p>
       </div>
       <img id='head' src="images/myhead.png" alt="">
     </div>
+
+    <img id="arrow" src="images/arrow.png" alt="">
   </div>
 
   <div id="about">
-    <h2>about</h2>
     <!-- be as concise as possible, about roles, interests in web dev and outside -->
     <!-- include the skills ive got - specific about languages, "special interest" be a bit edgy, quirky terms, ES6, react etc. and UX focused and show that in the portfolio-->
     <p>I'm a developer with client facing skills and an eye for detail. I'm interested in full-stack development as it provides an opportunity to combine creativity with problem solving. I'm inherently curious by nature, and love finding better ways to do things.</p>
@@ -79,6 +83,7 @@
   <footer>
     Hey
   </footer>
+</div>
 </body>
 
 </html>

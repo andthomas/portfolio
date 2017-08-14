@@ -1,26 +1,32 @@
+#topBorder {
+  height: 10px;
+  width: 100%;
+  background-color: #51355A;
+  top: 0;
+  position: fixed;
+}
+
 #header {
   top: 0;
   width: 97%;
   height: 35vh;
-  /*border: 1px solid black;*/
   padding: 5px;
-  /*position: fixed;*/
-  /*display: inline;*/
-  /*background: rgb(255, 255, 255);*/
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
 }
 
-#menu {
-
-}
-
 body {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
-  top: 0;
   border: 10px solid #51355A;
   background-color: #FFFCF9;
+}
+
+#container {
+  opacity: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 10px solid #FFFFFF;
 }
 
 footer {
@@ -41,9 +47,6 @@ a {
 }
 
 table {
-  /*float: right;*/
-  /*display: inline;*/
-  /*right: 0px;*/
   text-align: center;
   margin: 0 auto;
 }
@@ -58,10 +61,6 @@ td {
 #home {
   width: 100%;
   height: 65vh;
-  /*border: 1px solid black;*/
-  /*background-image: url("../images/iceland.JPG");*/
-  /*background-size: cover;*/
-  /*margin: 0 auto;*/
 }
 
 #homeContent {
@@ -69,31 +68,25 @@ td {
   height: 350px;
   border: 8px solid red;
   margin: 0 auto;
-  /*margin-top: 8%;*/
   border-radius: 4px;
-
 }
 
 #head {
   margin-top: 8%;
-  /*margin-left: 9%;*/
   width: 49%;
   display: inline;
   float: left;
   margin-left: -26%;
   bottom: 0;
-  /*border: 1px solid green;*/
   z-index: 100;
 }
 
 #headContent {
   width: 73%;
   height: 100%;
-  /*border: 1px solid blue;*/
   display: absolute;
   float: right;
   padding-right: 15px;
-  /*margin: 0 auto;*/
 }
 
 #title {
@@ -104,6 +97,13 @@ td {
    margin-left: 50px;
    margin-right: 50px;
    font-family: 'Lato', sans-serif;
+}
+
+#arrow {
+  width: 80px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 3%;
 }
 
 h1 {
@@ -120,7 +120,7 @@ h3 {
   text-align: center;
 }
 
-p {
+#headComment {
   font-family: 'Raleway', sans-serif;
   letter-spacing: .3px;
   line-height: 180%;
@@ -134,18 +134,15 @@ p {
   width: 100%;
   height: 100vh;
   border: 1px solid black;
-  padding: 30px
 }
 
 #projects {
   width: 100%;
   border: 1px solid black;
-
 }
 
 #projectImageLeft {
   width: 400px;
-  /*display: block;*/
   margin: 20px;
   left: 0;
 }
@@ -154,5 +151,4 @@ p {
   width: 400px;
   display: block;
   margin: 20px;
-  /*float: right;*/
 }

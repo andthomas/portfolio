@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Nothing+You+Could+Do|Raleway" rel="stylesheet">
 
   <title>Andy Brown</title>
 
@@ -14,24 +14,37 @@
 </head>
 
 <body>
-  <header>
-    <img id="logo" src="ab.png" alt="">
-    <table>
-      <tr>
-        <td><a href="#about">about</a></td>
-        <td><a href="#projects">projects</a></td>
-        <!-- Link resume in pdf format -->
-        <td>resume</td>
-        <td><a href="#contact">contact</a></td>
-      </tr>
-    </table>
-  </header>
+
+  <div id="header">
+    <!-- <img id="logo" src="images/ab.png" alt=""> -->
+    <h1>ANDY BROWN</h1>
+    <h3>web developer</h3>
+
+    <div id="menu">
+      <table>
+        <tr>
+          <td><a href="#about">about</a></td>
+          <td><a href="#projects">projects</a></td>
+          <!-- Link resume in pdf format -->
+          <td>resume</td>
+          <td><a href="#contact">contact</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
   <div id="home">
-    <h1>I'm Andy, a front end web developer and adventurer based in Sydney, Australia.</h1>
+    <!-- <h1 id="title">Andy Brown | Web Developer</h1> -->
     <!-- look at sans serif fonts -->
     <!-- above the fold: who you are, what youre looking for, interests outside of web development -->
     <!-- put contact details at top and make sticky -->
 
+    <div id="homeContent">
+      <div id="headContent">
+        <p>Hi there, I'm Andy. I'm a passionate front end developer, with a keen interest in all faucets of the web. I'm inherently curious by nature, and love finding better ways to do things.</p>
+      </div>
+      <img id='head' src="images/myhead.png" alt="">
+    </div>
   </div>
 
   <div id="about">
@@ -47,19 +60,19 @@
 
     <!-- link to repo and live site -->
     <div class="projectContainer">
-      <a href="https://andthomas.github.io/tictactoe/"><img id="projectImageLeft" src="tictactoe.png" alt=""></a>
+      <a href="https://andthomas.github.io/tictactoe/"><img id="projectImageLeft" src="images/tictactoe.png" alt=""></a>
     </div>
 
     <div class="projectContainer">
-      <a href="https://syd-happy-hour.herokuapp.com/"><img id="projectImageRight" src="happyhour.png" alt=""></a>
+      <a href="https://syd-happy-hour.herokuapp.com/"><img id="projectImageRight" src="images/happyhour.png" alt=""></a>
     </div>
 
     <div class="projectContainer">
-      <a href="https://fraga-app.herokuapp.com/"><img id="projectImageLeft" src="fraga.png" alt=""></a>
+      <a href="https://fraga-app.herokuapp.com/"><img id="projectImageLeft" src="images/fraga.png" alt=""></a>
     </div>
 
     <div class="projectContainer">
-      <a href="https://www.google.com"><img id="projectImageRight" src="voyager.png" alt=""></a>
+      <a href="https://www.google.com"><img id="projectImageRight" src="images/voyager.png" alt=""></a>
     </div>
   </div>
 

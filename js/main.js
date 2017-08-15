@@ -31,15 +31,25 @@ $(document).ready(function() {
       scrollTop: $('#skills').offset().top
     }, 800)
   })
-
-  $("#menu").on("scroll", function() {
-
-  if (this.scrollTop > 347) {
-    console.log('hey')
-    $("#menu").addClass("fix-menu");
-  } else {
-    $("#menu").removeClass("fix-menu");
-  }
+  $("#arrow2").on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('#projects').offset().top
+    }, 800)
+  })
+  $("#skillsLink").on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('#skills').offset().top
+    }, 800)
+  })
+  $("#projectsLink").on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('#projects').offset().top
+    }, 800)
+  })
+  $("#contactLink").on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('#contact').offset()
+    }, 800)
+  })
 
 });
-})

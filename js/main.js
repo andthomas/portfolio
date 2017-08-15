@@ -9,6 +9,12 @@ $(document).ready(function() {
   $('#arrow').on('mouseleave', function(){
     $("#arrow").animate({opacity: '1'}, 'medium');
   })
+  $('#arrow2').on('mouseenter', function(){
+    $("#arrow2").animate({opacity: '0.3'}, 'medium');
+  })
+  $('#arrow2').on('mouseleave', function(){
+    $("#arrow2").animate({opacity: '1'}, 'medium');
+  })
 
   //Animate menu
   $('.nav').on('mouseenter', function(){
@@ -48,7 +54,7 @@ $(document).ready(function() {
   })
   $("#contactLink").on('click', function() {
     $('html, body').animate({
-      scrollTop: $('#contact').offset()
+      scrollTop: $('#contact').offset().top
     }, 800)
   })
 

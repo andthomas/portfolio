@@ -317,8 +317,8 @@ li {
   padding: 5px;
   padding-bottom: 30px;
 }
-/*
-@media only screen and (max-width: 1115px) {
+
+@media only screen and (min-width: 500px) and (max-width: 1115px) {
 
   table {
     text-align: center;
@@ -376,7 +376,7 @@ li {
     width: 220px;
     display: inline;
     float: left;
-    margin-left: -150px;
+    margin-left: -130px;
     bottom: 0;
     z-index: 100;
   }
@@ -496,4 +496,4 @@ li {
     padding-bottom: 30px;
   }
 
-}*/
+}

@@ -1,11 +1,3 @@
-#topBorder {
-  height: 10px;
-  width: 100%;
-  background-color: #51355A;
-  top: 0;
-  position: fixed;
-}
-
 #header {
   top: 0;
   width: 97%;
@@ -16,11 +8,28 @@
 }
 
 body {
-  max-width: 100%;
+  width: 100vw;
   margin: 0 auto;
-  border: 10px solid #51355A;
   background-color: #FFFCF9;
 }
+
+#top, #bottom, #left, #right {
+	background: #51355A;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 10px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 10px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
 
 #container {
   opacity: 1;
@@ -32,7 +41,6 @@ body {
 #contact {
   width: 100%;
   height: 20%;
-  /*border: 1px solid blue;*/
 }
 
 a {
@@ -120,7 +128,7 @@ h1 {
    text-align: center;
    font-size: 65px;
    font-family: 'Lato', sans-serif;
-   margin-top: 30px;
+   margin-top: 60px;
    letter-spacing: 4px;
 }
 
@@ -152,6 +160,7 @@ li {
 #skillerTable {
   margin-top: 30px;
   width: 90%;
+  margin-bottom: 30px;
 }
 
 #skillTable {
@@ -179,14 +188,13 @@ li {
 
 #skills {
   width: 100%;
-  height: 100vh;
+  /*height: 100vh;*/
   /*border: 1px solid black;*/
   padding-top: 30px;
 }
 
 #skillContainer {
   width: 80%;
-  height: 70vh;
   border: 8px solid red;
   margin: 0 auto;
   border-radius: 4px;
@@ -309,3 +317,183 @@ li {
   padding: 5px;
   padding-bottom: 30px;
 }
+/*
+@media only screen and (max-width: 1115px) {
+
+  table {
+    text-align: center;
+    /*margin: 0 auto;*/
+    width: 490px;
+  }
+
+  td {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 20px;
+  }
+
+  .button {
+    background-color: #FFFCF9;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+  }
+
+  #header {
+    top: 0;
+    width: 97%;
+    height: 35vh;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+  }
+
+  #homeContent {
+    width: 450px;
+    height: 300px;
+    border: 8px solid red;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-top: 30px;
+    padding-right: 40px;
+  }
+
+  #headContent {
+    width: 350px;
+    height: 100%;
+    display: absolute;
+    float: right;
+    padding-right: 0px;
+  }
+
+  #head {
+    margin-top: 10%;
+    width: 220px;
+    display: inline;
+    float: left;
+    margin-left: -150px;
+    bottom: 0;
+    z-index: 100;
+  }
+
+  #headComment {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .3px;
+    line-height: 180%;
+    margin-top: 13%;
+    padding-right: 12px;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  #arrow {
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+  }
+
+  #skillContainer {
+    margin-top: 60px;
+    width: 480px;
+    border: 8px solid red;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #skillerTable {
+    margin-top: 60px;
+    width: 90%;
+  }
+
+  #projectImageLeft {
+    width: 250px;
+    margin-left: -60px;
+  }
+
+  .projectContentLeft {
+    display: absolute;
+    width: 280px;
+    /*margin-top: 100px;*/
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 11px;
+  }
+
+
+  #projectImageRight {
+    width: 250px;
+    margin-right: -60px;
+    margin-top: -300px;
+  }
+
+  .projectContainer {
+    width: 550px;
+    margin: 0 auto;
+    border: 8px solid red;
+    margin-bottom: 80px;
+    border-radius: 4px;
+  }
+
+  .projectContentRight {
+    width: 260px;
+    display: absolute;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .3px;
+    line-height: 180%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 11px;
+  }
+
+  #voyagerImageRight {
+    width: 250px;
+    display: absolute;
+    border: 4px solid #51355A;
+    border-radius: 4px;
+    float: right;
+    margin-top: -305px;
+    margin-right: -60px;
+  }
+
+  .voyagerContentRight {
+    width: 270px;
+    display: absolute;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .3px;
+    line-height: 180%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 11px;
+  }
+
+  #footer {
+    width: 25%;
+    margin: 0 auto;
+  }
+
+  #icon {
+    width: 26%;
+    padding: 5px;
+    padding-bottom: 30px;
+  }
+
+}*/

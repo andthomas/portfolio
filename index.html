@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=800">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/master.css">
   <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
@@ -15,7 +15,12 @@
 </head>
 
 <body>
-<div id="topBorder"></div>
+  <div id="top"></div>
+  <div id="bottom"></div>
+  <div id="left"></div>
+  <div id="right"></div>
+  <!-- <div id="siteBorder"> -->
+<!-- <div id="topBorder"></div> -->
 <div id="container">
 
   <div id="header">
@@ -23,7 +28,6 @@
     <h1>ANDY BROWN</h1>
     <h3>web developer</h3>
 
-    <div id="menu">
       <table>
         <tr>
           <td ><p id="skillsLink" class="nav">about</p></td>
@@ -33,7 +37,7 @@
           <td><p id="contactLink" class="nav">contact</p></td>
         </tr>
       </table>
-    </div>
+
   </div>
 
   <div id="home">
@@ -59,7 +63,7 @@
 
     <div id="skillContainer">
       <div id="skillContent">
-        <p>If I'm not making awesome websites or online tools, you'll usually find me on my bike or listening to the latest podcast from RadioLab or This American Life. When I am working, I love taking the opportunity to collaborate with UX designers to deliver high quality online applications. The skills I possess in web dev and life can be categorised into the following:</p>
+        <p>If I'm not making awesome websites or online tools, you'll usually find me on my bike or listening to the latest podcast from RadioLab or This American Life. <br><br>When I am working, I love taking the opportunity to collaborate with UX designers to deliver high quality online applications. The skills I possess in web dev and life can be categorised into the following:</p>
       </div>
       <table id="skillerTable">
         <tr>
@@ -133,8 +137,9 @@
         <h4><u><a target="_blank" href="https://andthomas.github.io/Voyager1/">Voyager 1</a></u></h4>
         <p>In this project, I constructed a 3D model of the solar system using Three.js. Integrated into this are a Blender model of Voyager 1 and its historical heliocentric trajectory data, both sourced from NASA's Space Physics Data Facility. These were converted into JSON format to render the model and map its flight trajectory. The model satellite is animated to move through the solar system which can be controlled by a Dat GUI controller. The camera angle of the satellite can be manoeuvred using a Google Daydream controller. <b><a target="_blank" href="https://github.com/andthomas/Voyager1"> (Source code)</a></b></p>
       </div>
+            <a target="_blank" href="https://andthomas.github.io/Voyager1/"><img id="projectImageRight" src="images/voyager.png" alt=""></a>
       </div>
-      <a target="_blank" href="https://andthomas.github.io/Voyager1/"><img id="voyagerImageRight" src="images/voyager.png" alt=""></a>
+
     </div>
   </div>
 
@@ -150,6 +155,7 @@
     </div>
 
   </div>
+</div>
 </div>
 </body>
 

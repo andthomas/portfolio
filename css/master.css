@@ -62,6 +62,10 @@ a {
   color: black;
 }
 
+.nav {
+  cursor: pointer;
+}
+
 table {
   text-align: center;
   margin: 0 auto;
@@ -83,6 +87,11 @@ td {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.button:focus {
+  border: none;
 }
 
 .fix-menu {
